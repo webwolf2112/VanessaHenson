@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import TechnicalWriting from "./components/TechnicalWriting";
 import PostmanCollectionPage from "./components/PostmanCollectionPage";
@@ -50,7 +50,7 @@ function App() {
   );
 
   return (
-    <Router basename="/VanessaHenson">
+    <Router>
       <button
         className="theme-toggle"
         onClick={toggleTheme}
