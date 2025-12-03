@@ -5,7 +5,7 @@ import PostmanCollectionPage from "./components/PostmanCollectionPage";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState("home");
 
   // Check for saved theme preference or default to system preference
   useEffect(() => {
@@ -60,8 +60,8 @@ function App() {
       </button>
 
       <div className="app">
-        {currentPage === 'home' && <HomePage />}
-        {currentPage === 'postman-automation' && (
+        {currentPage === "home" && <HomePage />}
+        {currentPage === "postman-automation" && (
           <PostmanCollectionPage onNavigate={setCurrentPage} />
         )}
       </div>

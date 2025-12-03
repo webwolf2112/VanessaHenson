@@ -36,9 +36,9 @@ const TechnicalWriting: React.FC<TechnicalWritingProps> = ({ onNavigate }) => {
 
               <div className="writing-links">
                 {project.internalUrl && (
-                  <button 
+                  <button
                     className="btn btn-primary"
-                    onClick={() => onNavigate('postman-automation')}
+                    onClick={() => onNavigate("postman-automation")}
                   >
                     📖 Read Article
                   </button>

@@ -4,15 +4,14 @@ interface PostmanCollectionPageProps {
   onNavigate: (page: string) => void;
 }
 
-const PostmanCollectionPage: React.FC<PostmanCollectionPageProps> = ({ onNavigate }) => {
+const PostmanCollectionPage: React.FC<PostmanCollectionPageProps> = ({
+  onNavigate,
+}) => {
   return (
     <div className="postman-page">
       <nav className="page-nav">
         <div className="container">
-          <button 
-            className="nav-home"
-            onClick={() => onNavigate('home')}
-          >
+          <button className="nav-home" onClick={() => onNavigate("home")}>
             ← Back to Portfolio
           </button>
         </div>
