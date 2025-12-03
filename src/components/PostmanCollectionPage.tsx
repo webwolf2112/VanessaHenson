@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const PostmanCollectionPage: React.FC = () => {
+interface PostmanCollectionPageProps {
+  onNavigate: (page: string) => void;
+}
+
+const PostmanCollectionPage: React.FC<PostmanCollectionPageProps> = ({ onNavigate }) => {
   return (
     <div className="postman-page">
       <nav className="page-nav">
         <div className="container">
-          <Link to="/" className="nav-home">
+          <button 
+            className="nav-home"
+            onClick={() => onNavigate('home')}
+          >
             ← Back to Portfolio
-          </Link>
+          </button>
         </div>
       </nav>
 

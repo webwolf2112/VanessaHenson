@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import TechnicalWriting from "./components/TechnicalWriting";
 import PostmanCollectionPage from "./components/PostmanCollectionPage";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [currentPage, setCurrentPage] = useState('home');
 
   // Check for saved theme preference or default to system preference
   useEffect(() => {
@@ -44,13 +44,13 @@ function App() {
       </header>
 
       <main>
-        <TechnicalWriting />
+        <TechnicalWriting onNavigate={setCurrentPage} />
       </main>
     </>
   );
 
   return (
-    <Router>
+    <>
       <button
         className="theme-toggle"
         onClick={toggleTheme}
@@ -60,15 +60,12 @@ function App() {
       </button>
 
       <div className="app">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/postman-automation"
-            element={<PostmanCollectionPage />}
-          />
-        </Routes>
+        {currentPage === 'home' && <HomePage />}
+        {currentPage === 'postman-automation' && (
+          <PostmanCollectionPage onNavigate={setCurrentPage} />
+        )}
       </div>
-    </Router>
+    </>
   );
 }
 
