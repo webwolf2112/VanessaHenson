@@ -5,29 +5,45 @@ interface PromptEngineeringProps {
   onNavigate: (page: string) => void;
 }
 
-const PromptEngineering: React.FC<PromptEngineeringProps> = ({ onNavigate }) => {
+const PromptEngineering: React.FC<PromptEngineeringProps> = ({
+  onNavigate,
+}) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  const categories = ["All", "Copilot", "Gemini", "ChatGPT", "Industry", "Social Media", "Design", "Code"];
+  const categories = [
+    "All",
+    "Copilot",
+    "Gemini",
+    "ChatGPT",
+    "Industry",
+    "Social Media",
+    "Design",
+    "Code",
+  ];
 
-  const filteredProjects = selectedCategory === "All" 
-    ? promptProjects 
-    : promptProjects.filter(project => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "All"
+      ? promptProjects
+      : promptProjects.filter(
+          (project) => project.category === selectedCategory
+        );
 
   return (
     <section className="prompt-engineering">
       <div className="container">
         <h2>Prompt Engineering</h2>
         <p className="section-intro">
-          Explore curated prompts and strategies for AI tools across different domains,
-          from code generation to social media and design.
+          Explore curated prompts and strategies for AI tools across different
+          domains, from code generation to social media and design.
         </p>
 
         <div className="category-filters">
           {categories.map((category) => (
             <button
               key={category}
-              className={`filter-btn ${selectedCategory === category ? "active" : ""}`}
+              className={`filter-btn ${
+                selectedCategory === category ? "active" : ""
+              }`}
               onClick={() => setSelectedCategory(category)}
             >
               {category}
@@ -98,7 +114,9 @@ const PromptEngineering: React.FC<PromptEngineeringProps> = ({ onNavigate }) => 
         </div>
 
         {filteredProjects.length === 0 && (
-          <p className="no-results">No prompts found in this category yet. Check back soon!</p>
+          <p className="no-results">
+            No prompts found in this category yet. Check back soon!
+          </p>
         )}
       </div>
     </section>

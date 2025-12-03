@@ -1,7 +1,14 @@
 export interface PromptProject {
   title: string;
   description: string;
-  category: "Copilot" | "Gemini" | "ChatGPT" | "Industry" | "Social Media" | "Design" | "Code";
+  category:
+    | "Copilot"
+    | "Gemini"
+    | "ChatGPT"
+    | "Industry"
+    | "Social Media"
+    | "Design"
+    | "Code";
   industries?: string[];
   technologies?: string[];
   preview: string;
@@ -19,7 +26,8 @@ export const promptProjects: PromptProject[] = [
     technologies: ["GitHub Copilot", "VS Code", "AI Pair Programming"],
     preview:
       "Master the art of prompting GitHub Copilot for better code suggestions, refactoring assistance, and automated documentation generation.",
-    examplePrompt: "Create a React component with TypeScript that handles form validation with error messages",
+    examplePrompt:
+      "Create a React component with TypeScript that handles form validation with error messages",
   },
   {
     title: "Code Generation Prompts",
@@ -29,7 +37,8 @@ export const promptProjects: PromptProject[] = [
     technologies: ["Python", "JavaScript", "TypeScript", "React", "Node.js"],
     preview:
       "Learn how to craft precise prompts for code generation, bug fixing, optimization, and architectural decisions.",
-    examplePrompt: "Write a REST API endpoint with error handling and validation using Express and TypeScript",
+    examplePrompt:
+      "Write a REST API endpoint with error handling and validation using Express and TypeScript",
   },
   {
     title: "Social Media Content Prompts",
