@@ -21,14 +21,4 @@ export const writingProjects: WritingProject[] = [
     preview:
       "Learn how to set up automated API testing pipelines using Postman collections, including environment management, test scripting, and integration with CI/CD workflows.",
   },
-  {
-    title: "React Portfolio Development Guide",
-    description:
-      "Step-by-step tutorial for building a modern portfolio website with React and TypeScript.",
-    type: "Tutorial",
-    repoUrl: "https://github.com/webwolf2112/VanessaHenson",
-    technologies: ["React", "TypeScript", "Vite", "GitHub Pages"],
-    preview:
-      "A complete walkthrough of creating a responsive portfolio site with dark/light mode, GitHub Actions deployment, and modern development practices.",
-  },
 ];

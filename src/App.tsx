@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import TechnicalWriting from "./components/TechnicalWriting";
 import PostmanCollectionPage from "./components/PostmanCollectionPage";
+import PromptEngineering from "./components/PromptEngineering";
+import DesignProjects from "./components/DesignProjects";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -45,6 +47,8 @@ function App() {
 
       <main>
         <TechnicalWriting onNavigate={setCurrentPage} />
+        <PromptEngineering onNavigate={setCurrentPage} />
+        <DesignProjects onNavigate={setCurrentPage} />
       </main>
     </>
   );
