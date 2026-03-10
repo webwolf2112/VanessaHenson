@@ -7,12 +7,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Color Palette - Based on your design reference */
-  --color-purple-dark: #3d52a0; /* Deep purple-blue */
-  --color-purple-medium: #7091e6; /* Medium blue-purple */
-  --color-purple-light: #8697c4; /* Light purple-gray */
-  --color-purple-pale: #adbbda; /* Pale purple-blue */
-  --color-purple-accent: #ede8f5; /* Very light purple */
+  /* Color Palette - Tesoro-inspired */
+  --color-coral: #ff7b6d;
+  --color-yellow: #ffb84d;
+  --color-green: #4ddb7a;
+  --color-teal: #4dd4bf;
+  --color-orange: #ffab40;
+
+  --color-black: #1a1a1a;
+  --color-cream: #faf9f6;
+
+  /*
+   * Section Color Assignments - Easy to customize!
+   *
+   * To change section colors, simply update these variables:
+   * - Change the color references to any of the colors above
+   * - Or use custom hex values like: #ff6b9d
+   *
+   * The card colors and section backgrounds will automatically match
+   */
+  --section-technical-writing: var(--color-coral);
+  --section-prompt-engineering: var(--color-yellow);
+  --section-design-projects: var(--color-green);
+  --section-connect: var(--color-teal);
 
   /* Extended color system */
   --color-white: #ffffff;
@@ -28,36 +45,36 @@
   --color-gray-900: #0f172a;
 
   /* Semantic colors */
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
+  --color-success: var(--color-green);
+  --color-warning: var(--color-orange);
   --color-error: #ef4444;
-  --color-info: var(--color-purple-medium);
+  --color-info: var(--color-teal);
 }
 
 /* Light theme variables */
 [data-theme="light"] {
-  --bg-color: var(--color-white);
-  --bg-secondary: var(--color-gray-50);
-  --bg-tertiary: var(--color-purple-accent);
+  --bg-color: var(--color-cream);
+  --bg-secondary: var(--color-white);
+  --bg-tertiary: var(--color-gray-50);
 
-  --text-color: var(--color-gray-900);
+  --text-color: var(--color-black);
   --text-secondary: var(--color-gray-600);
   --text-muted: var(--color-gray-500);
 
-  --primary-color: var(--color-purple-dark);
-  --primary-hover: var(--color-purple-medium);
-  --secondary-color: var(--color-purple-light);
-  --accent-color: var(--color-purple-medium);
+  --primary-color: var(--color-orange);
+  --primary-hover: var(--color-yellow);
+  --secondary-color: var(--color-teal);
+  --accent-color: var(--color-yellow);
 
   --border-color: var(--color-gray-200);
-  --border-hover: var(--color-purple-light);
+  --border-hover: var(--color-orange);
 
   --button-bg: var(--color-white);
-  --button-hover: var(--color-purple-accent);
-  --button-text: var(--color-purple-dark);
+  --button-hover: var(--color-gray-50);
+  --button-text: var(--color-black);
 
   --card-bg: var(--color-white);
-  --card-shadow: rgba(61, 82, 160, 0.1);
+  --card-shadow: rgba(0, 0, 0, 0.05);
 }
 
 /* Dark theme variables */
@@ -70,17 +87,17 @@
   --text-secondary: var(--color-gray-300);
   --text-muted: var(--color-gray-400);
 
-  --primary-color: var(--color-purple-medium);
-  --primary-hover: var(--color-purple-pale);
-  --secondary-color: var(--color-purple-light);
-  --accent-color: var(--color-purple-pale);
+  --primary-color: var(--color-orange);
+  --primary-hover: var(--color-yellow);
+  --secondary-color: var(--color-teal);
+  --accent-color: var(--color-yellow);
 
   --border-color: var(--color-gray-700);
-  --border-hover: var(--color-purple-light);
+  --border-hover: var(--color-orange);
 
   --button-bg: var(--color-gray-800);
   --button-hover: var(--color-gray-700);
-  --button-text: var(--color-purple-pale);
+  --button-text: var(--color-white);
 
   --card-bg: var(--color-gray-800);
   --card-shadow: rgba(0, 0, 0, 0.3);
@@ -92,6 +109,7 @@ html {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 a {

@@ -18,11 +18,5 @@ export interface DesignProject {
 }
 
 export const designProjects: DesignProject[] = [
-  {
-    title: "Coming Soon",
-    description: "Coming Soon",
-    type: "UI/UX",
-    tools: ["Canva"],
-    preview: "Coming Soon",
-  },
+  // Add your design projects here
 ];
