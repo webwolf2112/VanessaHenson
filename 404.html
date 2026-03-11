@@ -4,33 +4,11 @@
     <meta charset="utf-8" />
     <title>Vanessa Henson - Portfolio</title>
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-      // ----------------------------------------------------------------------
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-
-      // For HashRouter on GitHub Pages, redirect to base URL
-      var l = window.location;
-      var basePath = '/VanessaHenson/';
-      
-      // Extract the path after the repo name
-      var pathAfterRepo = l.pathname.replace(basePath, '');
-      
-      // Redirect to base URL with hash
-      if (pathAfterRepo && pathAfterRepo !== '/') {
-        l.replace(l.protocol + '//' + l.hostname + basePath + '#/' + pathAfterRepo + l.search + l.hash);
-      } else {
-        l.replace(l.protocol + '//' + l.hostname + basePath);
-      }
+      // Redirect any 404 to the homepage
+      window.location.replace('/VanessaHenson/');
     </script>
   </head>
   <body>
+    <p>Redirecting to homepage...</p>
   </body>
 </html>
