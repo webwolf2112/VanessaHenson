@@ -1,18 +1,23 @@
 import React from "react";
 import { writingProjects } from "../data/writingProjects";
 
-interface TechnicalWritingProps {
+interface DocumentationAndTrainingProps {
   onNavigate: (page: string) => void;
 }
 
-const TechnicalWriting: React.FC<TechnicalWritingProps> = ({ onNavigate }) => {
+const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({ onNavigate }) => {
   return (
     <section className="technical-writing">
       <div className="container">
-        <h2>Technical Writing</h2>
+        <h2>Documentation and Training</h2>
         <p className="section-intro">
-          I create clear, comprehensive documentation that helps developers
-          understand and implement complex technical concepts.
+          Documentation is the foundation of both AI and business success. I
+          create organized, comprehensive technical documents and training
+          materials that power AI agents, accelerate onboarding, and establish
+          the knowledge base your teams need to thrive. From API documentation
+          to developer workshops, I transform complex systems into clear,
+          actionable resources. Knowledge is truly the power your company needs
+          to shine.
         </p>
 
         <div className="writing-grid">
@@ -72,4 +77,4 @@ const TechnicalWriting: React.FC<TechnicalWritingProps> = ({ onNavigate }) => {
   );
 };
 
-export default TechnicalWriting;
+export default DocumentationAndTraining;

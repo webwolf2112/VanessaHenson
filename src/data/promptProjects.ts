@@ -2,6 +2,10 @@ export interface PromptProject {
   title: string;
   description: string;
   category:
+    | "MCP"
+    | "RAG"
+    | "Prompting"
+    | "Security"
     | "Copilot"
     | "Gemini"
     | "ChatGPT"
@@ -18,6 +22,42 @@ export interface PromptProject {
 }
 
 export const promptProjects: PromptProject[] = [
+  {
+    title: "Attack Surface Management",
+    description:
+      "Understanding and managing the expanded attack surface introduced by AI agents and integrations.",
+    category: "Security",
+    technologies: ["AI Security", "Risk Management", "Threat Modeling"],
+    preview:
+      "AI systems dramatically expand your attack surface. Every API call, data access, and integration point creates new vulnerabilities that traditional security tools miss. Learn to identify, monitor, and secure AI-specific attack vectors.",
+  },
+  {
+    title: "Shadow AI",
+    description:
+      "Detecting and managing unauthorized AI tools and shadow employees using AI outside security oversight.",
+    category: "Security",
+    technologies: ["Security Governance", "Policy Management", "AI Detection"],
+    preview:
+      "Shadow employees use AI tools outside of security team oversight, creating blind spots in your security posture. Unmanaged AI integrations bypass compliance controls, leak sensitive data, and introduce vulnerabilities. Implement detection and governance strategies.",
+  },
+  {
+    title: "Agent Autonomy Risks",
+    description:
+      "Securing AI agents that act with real credentials beyond human-supervised workflows.",
+    category: "Security",
+    technologies: ["Access Control", "Credential Management", "AI Governance"],
+    preview:
+      "Agent autonomy means AI systems act with real credentials beyond human-supervised workflows. They make decisions, execute transactions, and access sensitive systems automatically. Without proper controls, autonomous agents become high-privilege attack vectors.",
+  },
+  {
+    title: "Novel Vector Attacks",
+    description:
+      "Defending against AI-specific attacks: prompt injection, tool poisoning, memory corruption, and cascading failures.",
+    category: "Security",
+    technologies: ["Prompt Security", "AI Defense", "Attack Prevention"],
+    preview:
+      "Novel vector attacks target AI systems specifically: prompt injection bypasses instructions, tool poisoning corrupts agent capabilities, memory corruption leaks context across sessions, and cascading failures amplify damage across integrated systems. Traditional security tools can't detect these.",
+  },
   {
     title: "GitHub Copilot Prompts for Development",
     description:

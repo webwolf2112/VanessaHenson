@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import TechnicalWriting from "./components/TechnicalWriting";
+import DocumentationAndTraining from "./components/DocumentationAndTraining";
 import PostmanCollectionPage from "./components/PostmanCollectionPage";
-import PromptEngineering from "./components/PromptEngineering";
-import DesignProjects from "./components/DesignProjects";
+import AIIntegration from "./components/AIIntegration";
+import DevelopmentProjects from "./components/DevelopmentProjects";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -48,12 +48,12 @@ function App() {
       <nav className="nav-bar">
         <div className="nav-container">
           <a href="#" className="nav-logo">
-            vanessa henson
+            Vanessa Henson
           </a>
           <ul className="nav-menu">
             <li>
               <a href="#technical-writing" className="nav-link">
-                Writing
+                Documentation
               </a>
             </li>
             <li>
@@ -63,7 +63,7 @@ function App() {
             </li>
             <li>
               <a href="#design-projects" className="nav-link">
-                Training
+                Full Stack Development
               </a>
             </li>
           </ul>
@@ -89,7 +89,7 @@ function App() {
 
       <header className="hero">
         <h1 className="hero-headline">
-          Your content. My craft.
+          Your Company. My craft.
           <span className="hero-headline-accent">Everyone wins.</span>
         </h1>
         <p className="hero-subtitle">
@@ -157,13 +157,13 @@ function App() {
 
       <main>
         <div id="technical-writing">
-          <TechnicalWriting onNavigate={setCurrentPage} />
+          <DocumentationAndTraining onNavigate={setCurrentPage} />
         </div>
         <div id="prompt-engineering">
-          <PromptEngineering onNavigate={setCurrentPage} />
+          <AIIntegration onNavigate={setCurrentPage} />
         </div>
         <div id="design-projects">
-          <DesignProjects onNavigate={setCurrentPage} />
+          <DevelopmentProjects onNavigate={setCurrentPage} />
         </div>
       </main>
     </>

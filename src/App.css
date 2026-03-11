@@ -24,7 +24,6 @@
   font-weight: 800;
   color: var(--text-color);
   text-decoration: none;
-  text-transform: lowercase;
 }
 
 .nav-menu {
@@ -42,7 +41,6 @@
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.2s ease;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
@@ -86,7 +84,6 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
@@ -232,22 +229,21 @@
 }
 
 .companies-subsection {
-  margin-top: 5rem;
-  padding-top: 4rem;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+  padding-top: 0;
 }
 
 .companies-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--color-black);
+  color: var(--color-coral);
   margin-bottom: 3rem;
 }
 
 .companies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -255,44 +251,51 @@
 
 .company-card {
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
 }
 
 /* Solid color variations for company cards */
-.company-card:nth-child(5n + 1) {
+.company-card:nth-child(3n + 1) {
   background: var(--color-coral);
+  --card-color: var(--color-coral);
 }
 
-.company-card:nth-child(5n + 2) {
-  background: var(--color-yellow);
+.company-card:nth-child(3n + 2) {
+  background: var(--color-lavender);
+  --card-color: var(--color-lavender);
 }
 
-.company-card:nth-child(5n + 3) {
-  background: var(--color-green);
-}
-
-.company-card:nth-child(5n + 4) {
+.company-card:nth-child(3n + 3) {
   background: var(--color-teal);
-}
-
-.company-card:nth-child(5n + 5) {
-  background: var(--color-orange);
+  --card-color: var(--color-teal);
 }
 
 .company-card:hover {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
 .company-link {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .company-name {
@@ -304,11 +307,60 @@
 }
 
 .company-industry {
-  font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.5px;
   font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+/* Company Logo Styles */
+.company-logo-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.company-logo {
+  max-width: 140px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.company-name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-color);
+  color: var(--color-black);
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 16px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.company-card:hover .company-name-overlay {
+  opacity: 1;
+}
+
+.company-card:hover .company-logo {
+  transform: scale(0.9);
+  opacity: 0.2;
 }
 
 /* Let's Connect Section */
@@ -362,7 +414,7 @@
   }
 
   .companies-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -411,11 +463,16 @@
   }
 
   .companies-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .companies-title {
     font-size: 2rem;
+  }
+
+  .company-card {
+    padding: 1rem 0.75rem;
+    min-height: 160px;
   }
 
   .connect-title {
@@ -461,8 +518,20 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--color-black);
   font-weight: 800;
+}
+
+/* Section title colors */
+.technical-writing h2 {
+  color: var(--color-black);
+}
+
+.prompt-engineering h2 {
+  color: var(--color-black);
+}
+
+.design-projects h2 {
+  color: var(--color-black);
 }
 
 .category-filters {
