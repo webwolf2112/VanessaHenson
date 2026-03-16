@@ -19,7 +19,7 @@
 }
 
 .hero-headline {
-  margin: 0 0 var(--space-md) 0;
+  margin: 0;
   font-size: var(--font-size-6xl);
   font-weight: var(--font-weight-extrabold);
   line-height: var(--line-height-tight);
@@ -29,6 +29,10 @@
 .hero-headline-accent {
   color: var(--accent-color);
   display: block;
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-xl);
+  margin-top: var(--space-sm);
+  font-weight: var(--font-weight-medium);
 }
 
 .hero-subtitle {
@@ -147,6 +151,15 @@
   font-weight: var(--font-weight-extrabold);
   color: var(--color-black);
   margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+/* Let's Connect Section Intro Text */
+.companies-section .section-intro {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-xl);
 }
 
 .connect-links {
@@ -338,6 +351,10 @@
 
   .hero-headline {
     font-size: var(--font-size-4xl);
+  }
+
+  .hero-headline-accent {
+    font-size: var(--font-size-2xl);
   }
 
   .hero-subtitle {

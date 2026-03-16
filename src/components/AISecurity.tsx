@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { promptProjects } from "../data/promptProjects";
 
-interface AIIntegrationProps {
+interface AISecurityProps {
   onNavigate: (page: string) => void;
 }
 
-const AIIntegration: React.FC<AIIntegrationProps> = ({ onNavigate }) => {
+const AISecurity: React.FC<AISecurityProps> = ({ onNavigate }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const categories = ["All", "MCP", "RAG", "Prompting", "Security"];
@@ -32,7 +32,7 @@ const AIIntegration: React.FC<AIIntegrationProps> = ({ onNavigate }) => {
   return (
     <section className="prompt-engineering">
       <div className="container">
-        <h2>AI Integration & Security</h2>
+        <h2>AI Security</h2>
         <p className="section-intro">
           {categoryIntros[selectedCategory]}
         </p>
@@ -123,4 +123,4 @@ const AIIntegration: React.FC<AIIntegrationProps> = ({ onNavigate }) => {
   );
 };
 
-export default AIIntegration;
+export default AISecurity;

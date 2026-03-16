@@ -17,28 +17,36 @@ interface DevelopmentProjectsProps {
   onNavigate: (page: string) => void;
 }
 
-const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate }) => {
+const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({
+  onNavigate,
+}) => {
   // Map company names to imported logos
   const logoMap: Record<string, string> = {
-    "Ibotta": ibottaLogo,
-    "Proofpoint": proofpointLogo,
-    "Gogo": gogoLogo,
-    "Conga": congaLogo,
-    "Reebok": reebokLogo,
-    "Crocs": crocsLogo,
+    Ibotta: ibottaLogo,
+    Proofpoint: proofpointLogo,
+    Gogo: gogoLogo,
+    Conga: congaLogo,
+    Reebok: reebokLogo,
+    Crocs: crocsLogo,
     "Rita Hazan": ritaHazanLogo,
-    "Nordstrom": nordstromLogo,
+    Nordstrom: nordstromLogo,
     "Big Chill": bigChillLogo,
     "Voltage Advertising": voltageLogo,
-    "CrossFit": crossfitLogo,
+    CrossFit: crossfitLogo,
   };
 
   return (
     <section className="design-projects">
       <div className="container">
-        <h2>Full Stack Development</h2>
+        <h2>Full Stack Excellence</h2>
         <p className="section-intro">
-          End-to-end software architecture and implementation across the entire technology stack. From scalable backend systems and API design to beautiful, responsive UIs with modern frontend frameworks and cloud infrastructure, I build robust, performant applications that solve real business problems. Event-driven architectures, CI/CD pipelines, and security-first development meet pixel-perfect interfaces that users love.
+          End-to-end software architecture and implementation across the entire
+          technology stack. From scalable backend systems and API design to
+          beautiful, responsive UIs with modern frontend frameworks and cloud
+          infrastructure, I build robust, performant applications that solve
+          real business problems. Event-driven architectures, CI/CD pipelines,
+          and security-first development meet pixel-perfect interfaces that
+          users love.
         </p>
 
         <div className="writing-grid">
@@ -106,7 +114,9 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate })
 
         {/* Companies Section */}
         <div className="companies-subsection">
-          <h3 className="companies-title">See who's trusted me with their code</h3>
+          <h3 className="companies-title">
+            See who's trusted me with their code
+          </h3>
           <div className="companies-grid">
             {companies.map((company, index) => {
               const logo = logoMap[company.name];
@@ -127,17 +137,23 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate })
                               alt={company.name}
                               className="company-logo"
                             />
-                            <div className="company-name-overlay">{company.name}</div>
+                            <div className="company-name-overlay">
+                              {company.name}
+                            </div>
                           </div>
                           {company.industry && (
-                            <div className="company-industry">{company.industry}</div>
+                            <div className="company-industry">
+                              {company.industry}
+                            </div>
                           )}
                         </>
                       ) : (
                         <>
                           <div className="company-name">{company.name}</div>
                           {company.industry && (
-                            <div className="company-industry">{company.industry}</div>
+                            <div className="company-industry">
+                              {company.industry}
+                            </div>
                           )}
                         </>
                       )}
@@ -152,17 +168,23 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate })
                               alt={company.name}
                               className="company-logo"
                             />
-                            <div className="company-name-overlay">{company.name}</div>
+                            <div className="company-name-overlay">
+                              {company.name}
+                            </div>
                           </div>
                           {company.industry && (
-                            <div className="company-industry">{company.industry}</div>
+                            <div className="company-industry">
+                              {company.industry}
+                            </div>
                           )}
                         </>
                       ) : (
                         <>
                           <div className="company-name">{company.name}</div>
                           {company.industry && (
-                            <div className="company-industry">{company.industry}</div>
+                            <div className="company-industry">
+                              {company.industry}
+                            </div>
                           )}
                         </>
                       )}
@@ -171,29 +193,6 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate })
                 </div>
               );
             })}
-          </div>
-        </div>
-
-        {/* Let's Connect Section */}
-        <div id="lets-connect" className="connect-subsection">
-          <h3 className="connect-title">Let's Connect</h3>
-          <div className="connect-links">
-            <a
-              href="https://www.linkedin.com/in/vanessa-henson/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="connect-link"
-            >
-              💼 LinkedIn
-            </a>
-            <a
-              href="http://vanessahenson.blogspot.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="connect-link"
-            >
-              📝 Blog
-            </a>
           </div>
         </div>
       </div>

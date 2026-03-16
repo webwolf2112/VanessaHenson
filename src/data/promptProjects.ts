@@ -25,38 +25,38 @@ export const promptProjects: PromptProject[] = [
   {
     title: "Attack Surface Management",
     description:
-      "Understanding and managing the expanded attack surface introduced by AI agents and integrations.",
+      "Focus: Visibility and Control - Expanding the Perimeter",
     category: "Security",
     technologies: ["AI Security", "Risk Management", "Threat Modeling"],
     preview:
-      "AI systems dramatically expand your attack surface. Every API call, data access, and integration point creates new vulnerabilities that traditional security tools miss. Learn to identify, monitor, and secure AI-specific attack vectors.",
+      "As AI agents and integrations grow, so does the potential for risk. I focus on identifying and securing new entry points, ensuring data access remains monitored and controlled.",
   },
   {
     title: "Shadow AI",
     description:
-      "Detecting and managing unauthorized AI tools and shadow employees using AI outside security oversight.",
+      "Focus: Governance and Education - Managing the Unknown",
     category: "Security",
     technologies: ["Security Governance", "Policy Management", "AI Detection"],
     preview:
-      "Shadow employees use AI tools outside of security team oversight, creating blind spots in your security posture. Unmanaged AI integrations bypass compliance controls, leak sensitive data, and introduce vulnerabilities. Implement detection and governance strategies.",
+      "Unmanaged AI tools can create blind spots in a security posture. I advocate for clear governance and safe-use policies that empower employees to use AI without compromising company data.",
   },
   {
     title: "Agent Autonomy Risks",
     description:
-      "Securing AI agents that act with real credentials beyond human-supervised workflows.",
+      "Focus: Trust and Guardrails - Securing Independent Workflows",
     category: "Security",
     technologies: ["Access Control", "Credential Management", "AI Governance"],
     preview:
-      "Agent autonomy means AI systems act with real credentials beyond human-supervised workflows. They make decisions, execute transactions, and access sensitive systems automatically. Without proper controls, autonomous agents become high-privilege attack vectors.",
+      "Agents with high-level credentials require robust guardrails. I focus on credential management and access controls to ensure autonomous systems act only within their intended scope.",
   },
   {
-    title: "Novel Vector Attacks",
+    title: "Novel Vector Defense",
     description:
-      "Defending against AI-specific attacks: prompt injection, tool poisoning, memory corruption, and cascading failures.",
+      "Focus: Resilience and Awareness - Protecting Against the New",
     category: "Security",
     technologies: ["Prompt Security", "AI Defense", "Attack Prevention"],
     preview:
-      "Novel vector attacks target AI systems specifically: prompt injection bypasses instructions, tool poisoning corrupts agent capabilities, memory corruption leaks context across sessions, and cascading failures amplify damage across integrated systems. Traditional security tools can't detect these.",
+      "From prompt injection to data poisoning, AI introduces unique challenges. I help build defenses that anticipate these novel vectors, keeping systems resilient in a rapidly shifting landscape.",
   },
   {
     title: "GitHub Copilot Prompts for Development",
