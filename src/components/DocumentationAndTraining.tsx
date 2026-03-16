@@ -51,16 +51,6 @@ const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({
                     📖 Read Article
                   </button>
                 )}
-                {project.repoUrl && (
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-secondary"
-                  >
-                    � View Repository
-                  </a>
-                )}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
@@ -68,7 +58,7 @@ const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({
                     rel="noopener noreferrer"
                     className="btn btn-secondary"
                   >
-                    � Live Demo
+                    🌐 Live Demo
                   </a>
                 )}
               </div>

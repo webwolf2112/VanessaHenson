@@ -239,25 +239,6 @@ console.log("⭐⭐⭐⭐⭐⭐⭐");`}
               with variable passing. Apply these same principles to your own
               APIs to automate data population for your applications.
             </p>
-
-            <div className="action-buttons">
-              <a
-                href="https://github.com/webwolf2112/postman-collection-runner"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-large"
-              >
-                📖 View Full Documentation
-              </a>
-              <a
-                href="https://github.com/webwolf2112/postman-collection-runner/blob/main/examples"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary btn-large"
-              >
-                📁 Download Examples
-              </a>
-            </div>
           </div>
 
           <div className="tech-stack">

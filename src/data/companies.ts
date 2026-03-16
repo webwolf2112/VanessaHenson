@@ -53,6 +53,7 @@ export const companies: Company[] = [
   },
   {
     name: "Voltage Advertising",
+    url: "https://voltagead.com/",
     industry: "Marketing",
   },
   {

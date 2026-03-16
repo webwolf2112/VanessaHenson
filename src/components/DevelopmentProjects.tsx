@@ -129,64 +129,32 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({
                       rel="noopener noreferrer"
                       className="company-link"
                     >
-                      {logo ? (
-                        <>
-                          <div className="company-logo-container">
-                            <img
-                              src={logo}
-                              alt={company.name}
-                              className="company-logo"
-                            />
-                            <div className="company-name-overlay">
-                              {company.name}
-                            </div>
-                          </div>
-                          {company.industry && (
-                            <div className="company-industry">
-                              {company.industry}
-                            </div>
-                          )}
-                        </>
-                      ) : (
-                        <>
-                          <div className="company-name">{company.name}</div>
-                          {company.industry && (
-                            <div className="company-industry">
-                              {company.industry}
-                            </div>
-                          )}
-                        </>
+                      <div className="company-card-header">
+                        <div className="company-name">{company.name}</div>
+                      </div>
+                      {logo && (
+                        <div className="company-logo-container">
+                          <img
+                            src={logo}
+                            alt={company.name}
+                            className="company-logo"
+                          />
+                        </div>
                       )}
                     </a>
                   ) : (
                     <>
-                      {logo ? (
-                        <>
-                          <div className="company-logo-container">
-                            <img
-                              src={logo}
-                              alt={company.name}
-                              className="company-logo"
-                            />
-                            <div className="company-name-overlay">
-                              {company.name}
-                            </div>
-                          </div>
-                          {company.industry && (
-                            <div className="company-industry">
-                              {company.industry}
-                            </div>
-                          )}
-                        </>
-                      ) : (
-                        <>
-                          <div className="company-name">{company.name}</div>
-                          {company.industry && (
-                            <div className="company-industry">
-                              {company.industry}
-                            </div>
-                          )}
-                        </>
+                      <div className="company-card-header">
+                        <div className="company-name">{company.name}</div>
+                      </div>
+                      {logo && (
+                        <div className="company-logo-container">
+                          <img
+                            src={logo}
+                            alt={company.name}
+                            className="company-logo"
+                          />
+                        </div>
                       )}
                     </>
                   )}

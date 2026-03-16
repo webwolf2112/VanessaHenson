@@ -125,13 +125,21 @@
   padding-top: 0;
 }
 
-.companies-title,
-.section-subtitle {
+.companies-title {
   text-align: center;
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-extrabold);
   color: var(--color-coral);
   margin-bottom: var(--space-xl);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-orange);
+  margin-bottom: var(--space-xl);
+  margin-top: var(--space-xl);
 }
 
 .section-subtitle {
