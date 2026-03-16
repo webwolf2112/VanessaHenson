@@ -8,18 +8,16 @@ interface AISecurityProps {
 const AISecurity: React.FC<AISecurityProps> = ({ onNavigate }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  const categories = ["All", "MCP", "RAG", "Prompting", "Security"];
+  const categories = ["All", "Integration Architecture", "Defensive Engineering", "Prompt Architecture"];
 
   const categoryIntros: Record<string, string> = {
-    All: "Strategic AI implementation with security at the forefront. From MCP and RAG architectures to prompt engineering and threat mitigation, I help organizations integrate AI safely and effectively while managing novel attack vectors and maintaining compliance.",
+    All: "I build AI systems with security at the core, not as an afterthought. From designing safe integrations to engineering defensive systems and production-ready prompts, my focus is on creating AI that's both powerful and protected against emerging threats.",
 
-    MCP: "Model Context Protocol (MCP) connects AI agents to your tools, databases, and APIs. I design and implement MCP servers that give your AI systems safe, controlled access to live data and functionality. From custom integrations to enterprise-scale deployments, I build the bridges that make AI agents truly useful in your environment.",
+    "Integration Architecture": "I design secure connections between AI systems and your infrastructure. Whether it's MCP servers controlling tool access or RAG pipelines grounding responses in verified data, I build integrations that balance capability with safety. Every connection includes access controls and audit trails that default to secure.",
 
-    RAG: "Retrieval Augmented Generation grounds AI in your organization's knowledge. I architect RAG systems that connect language models to your documentation, codebases, and data sources, ensuring responses are accurate, up-to-date, and traceable. From semantic search to context injection, I build knowledge systems that scale with your business.",
+    "Defensive Engineering": "I approach AI development with an adversarial mindset from the start. Every input, tool call, and memory reference is treated as potentially malicious. I build layered defenses against prompt injection, data exfiltration, and privilege escalation—security is part of the architecture, not added later.",
 
-    Prompting: "Great prompts are the difference between AI that frustrates and AI that accelerates. I craft prompt templates, chains, and systems that extract consistent, high-quality outputs from language models. From zero-shot strategies to few-shot examples and chain-of-thought reasoning, I engineer prompts that turn AI potential into production reliability.",
-
-    Security: "As a developer, your goal is to build \"pessimistic\" agents that treat every input, every tool, and even their own past memories as potentially malicious. I create secure, robust AI systems that anticipate and mitigate risks while delivering powerful capabilities. With a focus on best practices, I help organizations navigate the complexities of AI security to ensure successful, responsible deployments.",
+    "Prompt Architecture": "I treat prompts as production infrastructure that needs the same rigor as any other code. My templates include clear boundaries, structured outputs, and fail-safe behaviors that maintain integrity under edge cases. Each prompt is tested against adversarial inputs and designed to fail gracefully when things go wrong.",
   };
 
   const filteredProjects =

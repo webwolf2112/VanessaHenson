@@ -146,6 +146,21 @@ function App() {
             </p>
           </div>
         </div>
+
+        <div
+          className="portfolio-card portfolio-card-teal"
+          onClick={() => scrollToSection("lets-connect")}
+        >
+          <div className="card-icon">⭐</div>
+          <div>
+            <h3 className="card-title">Let's Connect</h3>
+            <p className="card-description">
+              Beyond the screen, I'm an optimist who loves constant learning and
+              thoughtful design. I'm currently looking for my next challenge—if
+              you're building something meaningful, I'd love to chat.
+            </p>
+          </div>
+        </div>
       </div>
 
       <main>
