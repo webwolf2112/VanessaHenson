@@ -1,0 +1,53 @@
+/**
+ * Main CSS Entry Point
+ * Orchestrates the CSS architecture using CSS Layers for explicit cascade control
+ *
+ * Layer Order (lower = higher specificity):
+ * 1. tokens - Design tokens (colors, spacing, typography, effects)
+ * 2. reset - CSS reset and root styles
+ * 3. base - Base HTML element styles
+ * 4. components - Component-specific styles
+ * 5. utilities - Utility classes
+ * 6. overrides - Page-specific overrides (future use)
+ */
+
+/* Define layer order explicitly */
+@layer tokens, reset, base, components, utilities, overrides;
+
+/* ============================================
+   TOKENS LAYER
+   Design system foundation
+   ============================================ */
+@import './tokens/colors.css' layer(tokens);
+@import './tokens/spacing.css' layer(tokens);
+@import './tokens/typography.css' layer(tokens);
+@import './tokens/effects.css' layer(tokens);
+@import './tokens/breakpoints.css' layer(tokens);
+
+/* ============================================
+   RESET LAYER
+   CSS reset and root configuration
+   ============================================ */
+@import './base/reset.css' layer(reset);
+
+/* ============================================
+   BASE LAYER
+   Base HTML element defaults
+   ============================================ */
+@import './base/elements.css' layer(base);
+
+/* ============================================
+   COMPONENTS LAYER
+   All component styles
+   ============================================ */
+@import './components/navigation.css' layer(components);
+@import './components/buttons.css' layer(components);
+@import './components/cards.css' layer(components);
+@import './components/sections.css' layer(components);
+@import './components/grids.css' layer(components);
+
+/* ============================================
+   UTILITIES LAYER
+   Utility classes and helpers
+   ============================================ */
+@import './utilities/utilities.css' layer(utilities);

@@ -1,0 +1,194 @@
+/**
+ * Utility Classes
+ * Reusable utility patterns and helper classes
+ */
+
+/* Tags and Labels */
+.tech-tag {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--color-black);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-2xl);
+  font-size: var(--font-size-xs);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.industry-tag {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-2xl);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Tag Containers */
+.technologies,
+.industries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-md);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Category Filters */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: var(--space-lg) 0 var(--space-xl);
+}
+
+/* Example Prompts */
+.example-prompt {
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 3px solid var(--color-black);
+  padding: var(--space-sm);
+  margin: var(--space-sm) 0;
+  border-radius: var(--radius-xs);
+  font-size: var(--font-size-sm);
+}
+
+.example-prompt strong {
+  color: var(--color-black);
+  display: block;
+  margin-bottom: var(--space-2xs);
+}
+
+.example-prompt code {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: var(--font-family-mono);
+  font-size: 0.85rem;
+  line-height: var(--line-height-normal);
+}
+
+/* No Results Message */
+.no-results {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: var(--font-size-md);
+  padding: var(--space-xl);
+  font-style: italic;
+}
+
+/* Code Blocks */
+.code-block {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  overflow-x: auto;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Endpoint Display */
+.endpoint {
+  background: var(--bg-tertiary);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  margin: var(--space-sm) 0;
+  border: 1px solid var(--border-color);
+}
+
+.endpoint code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-base);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+
+.tech-stack h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-lg);
+  color: var(--text-color);
+}
+
+/* Logo Animations (deprecated but kept for compatibility) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Read the Docs (deprecated) */
+.read-the-docs {
+  color: #888;
+}
+
+/* Postman Page Specific */
+.postman-page {
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+
+.main-content h1 {
+  font-size: var(--font-size-3xl);
+}
+
+.main-content h2 {
+  font-size: var(--font-size-lg);
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .main-content h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .main-content h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  .theme-toggle {
+    top: var(--space-sm);
+    left: var(--space-sm);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--font-size-base);
+  }
+}

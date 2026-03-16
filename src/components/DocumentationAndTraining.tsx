@@ -5,7 +5,9 @@ interface DocumentationAndTrainingProps {
   onNavigate: (page: string) => void;
 }
 
-const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({ onNavigate }) => {
+const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({
+  onNavigate,
+}) => {
   return (
     <section className="technical-writing">
       <div className="container">
@@ -20,6 +22,7 @@ const DocumentationAndTraining: React.FC<DocumentationAndTrainingProps> = ({ onN
           to shine.
         </p>
 
+        <h3 className="section-subtitle">Sample Projects</h3>
         <div className="writing-grid">
           {writingProjects.map((project, index) => (
             <article key={index} className="writing-card">

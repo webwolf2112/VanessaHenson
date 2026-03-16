@@ -1,0 +1,384 @@
+/**
+ * Section Components
+ * Section containers and themed sections
+ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+}
+
+/* Hero Section */
+.hero {
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-xl) var(--space-xl);
+  text-align: center;
+}
+
+.hero-headline {
+  margin: 0 0 var(--space-md) 0;
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  color: var(--text-color);
+}
+
+.hero-headline-accent {
+  color: var(--accent-color);
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-2xl);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Section Container */
+.section-container {
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+  padding: var(--section-padding-block) var(--section-padding-inline);
+}
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-color);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+/* Content Sections (for internal pages) */
+.content-section {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Colored Section Backgrounds */
+.technical-writing {
+  background: var(--section-technical-writing);
+  padding: var(--space-2xl) 0;
+}
+
+.prompt-engineering {
+  background: var(--section-prompt-engineering);
+  padding: var(--space-2xl) 0;
+}
+
+.design-projects {
+  background: var(--section-design-projects);
+  padding: var(--space-2xl) 0;
+}
+
+/* Section Text Colors for Readability */
+.technical-writing .container,
+.prompt-engineering .container,
+.design-projects .container {
+  color: var(--color-black);
+}
+
+.technical-writing h2,
+.prompt-engineering h2,
+.design-projects h2 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-sm);
+  font-weight: var(--font-weight-extrabold);
+}
+
+/* Section Intro Text */
+.section-intro {
+  text-align: center;
+  font-size: var(--font-size-md);
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Companies Section */
+.companies-section {
+  background: var(--section-connect);
+  padding: var(--space-3xl) 0;
+}
+
+.companies-subsection {
+  margin-top: var(--space-xl);
+  padding-top: 0;
+}
+
+.companies-title,
+.section-subtitle {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-coral);
+  margin-bottom: var(--space-xl);
+}
+
+.section-subtitle {
+  margin-top: var(--space-xl);
+}
+
+/* Connect Subsection */
+.connect-subsection {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.connect-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-black);
+  margin-bottom: var(--space-lg);
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+/* Page Header (for internal pages) */
+.page-header {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-xl);
+  background: linear-gradient(
+    135deg,
+    var(--bg-color) 0%,
+    var(--bg-secondary) 100%
+  );
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height-snug);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Tutorial Sections */
+.tutorial-section {
+  margin: var(--space-xl) 0;
+}
+
+.tutorial-section h2 {
+  font-size: var(--font-size-xl);
+  color: var(--text-color);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-2xs);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.tutorial-content {
+  background: var(--bg-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+}
+
+.tutorial-content p {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-loose);
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Overview and Example Sections */
+.overview-section,
+.example-section {
+  margin: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.overview-section h2,
+.example-section h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-xl);
+  color: var(--text-color);
+}
+
+.example-intro {
+  font-size: var(--font-size-md);
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Getting Started CTA Section */
+.getting-started {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+
+.getting-started h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-sm);
+  color: var(--color-white);
+}
+
+.getting-started p {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-lg);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Personal Intro */
+.personal-intro {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-loose);
+  color: var(--text-color);
+  margin: 0;
+  text-align: left;
+}
+
+.personal-intro strong {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+.personal-intro em {
+  color: var(--accent-color);
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Learning Objectives */
+.learning-objectives {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.learning-objectives li {
+  background: var(--bg-tertiary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-color);
+  color: var(--text-color);
+  transition: var(--transition-transform);
+}
+
+.learning-objectives li:hover {
+  transform: translateX(4px);
+}
+
+.learning-objectives li::before {
+  content: "✓";
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--space-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+  }
+
+  .hero-headline {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-md);
+  }
+
+  .section-container {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .companies-title,
+  .connect-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .connect-links {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .connect-link {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,48 @@
+/**
+ * Effect Tokens
+ * Shadows, transitions, and border-radius values
+ */
+
+:root {
+  /* Shadow Scale */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
+  --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  /* Semantic Shadow Aliases */
+  --card-shadow-rest: var(--shadow-md);
+  --card-shadow-hover: var(--shadow-xl);
+  --button-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --button-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --button-cta-shadow: 0 8px 20px rgba(255, 171, 64, 0.3);
+
+  /* Border Radius Scale */
+  --radius-xs: 4px;      /* Code blocks */
+  --radius-sm: 6px;      /* Buttons */
+  --radius-md: 8px;      /* General use */
+  --radius-lg: 12px;     /* Cards */
+  --radius-xl: 16px;     /* Company cards */
+  --radius-2xl: 20px;    /* Filter buttons */
+  --radius-3xl: 24px;    /* Portfolio cards */
+  --radius-full: 9999px; /* Circular/pill buttons */
+
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-base: 200ms;
+  --transition-medium: 250ms;
+  --transition-slow: 300ms;
+
+  /* Easing Functions */
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Common Transition Patterns */
+  --transition-all: all var(--transition-base) var(--ease-in-out);
+  --transition-transform: transform var(--transition-base) var(--ease-in-out);
+  --transition-colors: background-color var(--transition-base) var(--ease-in-out),
+                       color var(--transition-base) var(--ease-in-out);
+  --transition-shadow: box-shadow var(--transition-base) var(--ease-in-out);
+}

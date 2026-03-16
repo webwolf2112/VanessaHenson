@@ -1,0 +1,28 @@
+/**
+ * Spacing Tokens
+ * T-shirt sizing scale for consistent spacing throughout the design
+ */
+
+:root {
+  /* Base Spacing Scale */
+  --space-2xs: 0.5rem;   /* 8px - Used 30+ times */
+  --space-xs: 0.75rem;   /* 12px */
+  --space-sm: 1rem;      /* 16px - Used 50+ times */
+  --space-md: 1.5rem;    /* 24px - Used 40+ times */
+  --space-lg: 2rem;      /* 32px - Used 60+ times */
+  --space-xl: 3rem;      /* 48px - Used 35+ times */
+  --space-2xl: 4rem;     /* 64px - Used 20+ times */
+  --space-3xl: 5rem;     /* 80px - Used 15+ times */
+
+  /* Semantic Spacing Aliases */
+  --section-padding-block: var(--space-2xl);
+  --section-padding-inline: var(--space-xl);
+  --card-padding: var(--space-lg);
+  --card-padding-sm: var(--space-md);
+  --grid-gap: var(--space-lg);
+  --grid-gap-sm: var(--space-md);
+  --button-padding-block: 0.6rem;
+  --button-padding-inline: 1.2rem;
+  --button-padding-large-block: 1rem;
+  --button-padding-large-inline: 2rem;
+}

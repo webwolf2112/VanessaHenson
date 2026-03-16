@@ -187,7 +187,7 @@ const DevelopmentProjects: React.FC<DevelopmentProjectsProps> = ({ onNavigate })
               💼 LinkedIn
             </a>
             <a
-              href="http://vanessahenson.blogspot.com/2023/12/add-fun-mario-bros-sound-on-git-commit.html"
+              href="http://vanessahenson.blogspot.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="connect-link"

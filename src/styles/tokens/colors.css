@@ -1,13 +1,10 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/**
+ * Color Tokens
+ * Extracted from index.css and enhanced with systematic variations
+ */
 
-  /* Color Palette - Tesoro-inspired */
+:root {
+  /* Base Color Palette - Tesoro-inspired */
   --color-coral: #ff7b6d;
   --color-yellow: #ffb84d;
   --color-green: #4ddb7a;
@@ -18,21 +15,13 @@
   --color-black: #1a1a1a;
   --color-cream: #faf9f6;
 
-  /*
-   * Section Color Assignments - Easy to customize!
-   *
-   * To change section colors, simply update these variables:
-   * - Change the color references to any of the colors above
-   * - Or use custom hex values like: #ff6b9d
-   *
-   * The card colors and section backgrounds will automatically match
-   */
+  /* Section Color Assignments - Easy to customize! */
   --section-technical-writing: var(--color-coral);
   --section-prompt-engineering: var(--color-yellow);
   --section-design-projects: var(--color-green);
   --section-connect: var(--color-teal);
 
-  /* Extended color system */
+  /* Extended Gray Scale */
   --color-white: #ffffff;
   --color-gray-50: #f8fafc;
   --color-gray-100: #f1f5f9;
@@ -45,14 +34,14 @@
   --color-gray-800: #1e293b;
   --color-gray-900: #0f172a;
 
-  /* Semantic colors */
+  /* Semantic Colors */
   --color-success: var(--color-green);
   --color-warning: var(--color-orange);
   --color-error: #ef4444;
   --color-info: var(--color-teal);
 }
 
-/* Light theme variables */
+/* Light Theme Variables */
 [data-theme="light"] {
   --bg-color: var(--color-cream);
   --bg-secondary: var(--color-white);
@@ -78,7 +67,7 @@
   --card-shadow: rgba(0, 0, 0, 0.05);
 }
 
-/* Dark theme variables */
+/* Dark Theme Variables */
 [data-theme="dark"] {
   --bg-color: var(--color-gray-900);
   --bg-secondary: var(--color-gray-800);
@@ -102,65 +91,4 @@
 
   --card-bg: var(--color-gray-800);
   --card-shadow: rgba(0, 0, 0, 0.3);
-}
-
-/* Apply theme variables */
-html {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-}
-
-a {
-  font-weight: 500;
-  color: var(--primary-color);
-  text-decoration: inherit;
-  transition: color 0.2s ease;
-}
-a:hover {
-  color: var(--primary-hover);
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: var(--text-color);
-}
-
-h2 {
-  color: var(--text-secondary);
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-button:hover {
-  background-color: var(--button-hover);
-  border-color: var(--border-hover);
-}
-button:focus,
-button:focus-visible {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 2px;
 }

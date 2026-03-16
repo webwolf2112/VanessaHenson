@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import DocumentationAndTraining from "./components/DocumentationAndTraining";
 import PostmanCollectionPage from "./components/PostmanCollectionPage";
 import AIIntegration from "./components/AIIntegration";
