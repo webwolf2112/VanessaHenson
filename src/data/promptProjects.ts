@@ -35,7 +35,7 @@ export const promptProjects: PromptProject[] = [
     category: "Defensive Engineering",
     technologies: ["Security Governance", "Policy Management", "AI Detection"],
     preview:
-      "Unmanaged AI tools can create blind spots in a security posture. The key is to understand the risks and doing through analysis of any new tools before using them in any environment",
+      "Unmanaged AI tools can create blind spots in a security posture. The key is understanding the risks and doing thorough analysis of any new tools before using them in any environment.",
   },
   {
     title: "Agent Autonomy Risks",
@@ -51,7 +51,7 @@ export const promptProjects: PromptProject[] = [
     category: "Defensive Engineering",
     technologies: ["Prompt Security", "AI Defense", "Attack Prevention"],
     preview:
-      "Ai introduces an entire new scope of attack vectors from prompt injection and cascading failures to data poisoning. Security is multi layered and it's important to understand the current vectors as well as continuous learning to continue to evolve alongside of AI",
+      "AI introduces an entire new scope of attack vectors from prompt injection and cascading failures to data poisoning. Security is multi-layered and it's important to understand the current vectors as well as continuous learning to continue to evolve alongside AI.",
   },
   {
     title: "Defensive System Prompts",
@@ -60,7 +60,7 @@ export const promptProjects: PromptProject[] = [
     category: "Prompt Architecture",
     technologies: ["System Prompts", "agents.md", "File Access Control"],
     preview:
-      "System prompts are your first line of defense in controlling AI behavior starting with utilizing consistent patters within agents.md files with proper security.  I design prompts and skills that explicitly define what files and resources an agent can access, preventing it from reading sensitive configuration or credentials",
+      "System prompts are your first line of defense in controlling AI behavior, starting with consistent patterns within agents.md files with proper security controls. The key is architecting prompts and skills that explicitly define what files and resources an agent can access, preventing it from reading sensitive configuration or credentials.",
   },
   {
     title: "Prompt Injection Mitigation",
@@ -72,7 +72,7 @@ export const promptProjects: PromptProject[] = [
       "Instruction Isolation",
     ],
     preview:
-      "User inputs are attack vectors waiting to happen. I structure prompts to clearly separate sanitized user-provided content from system instructions using delimiters, prefixes, and XML tags. By treating all user input as untrusted data rather than instructions, I prevent attackers from hijacking the AI's behavior through crafted prompts.",
+      "User inputs are attack vectors waiting to happen. The key is structuring prompts to clearly separate sanitized user-provided content from system instructions using delimiters, prefixes, and XML tags. By treating all user input as untrusted data rather than instructions, you prevent attackers from hijacking the AI's behavior through crafted prompts.",
   },
   {
     title: "Output Validation",
@@ -84,7 +84,7 @@ export const promptProjects: PromptProject[] = [
       "Data Leakage Prevention",
     ],
     preview:
-      "AI outputs can't be trusted blindly. It's important to have validation layers that check responses for hallucinated data, PII leakage, and off-task behavior before they reach users. Structured outputs with strict schemas help ensure the AI stays within safe boundaries, ensuring post-processing checks that catch attempts to leak training data or bypass content filters.",
+      "AI outputs can't be trusted blindly. The key is implementing validation layers that check responses for hallucinated data, PII leakage, and off-task behavior before they reach users. Structured outputs with strict schemas help ensure the AI stays within safe boundaries, with post-processing checks that catch attempts to leak training data or bypass content filters.",
   },
   {
     title: "MCP Server Security",
@@ -92,7 +92,7 @@ export const promptProjects: PromptProject[] = [
     category: "Integration Architecture",
     technologies: ["Model Context Protocol", "API Security", "Access Control"],
     preview:
-      "MCP servers are the gateway between AI agents and your systems. It's critical to use MCP implementations that use capability-based security, where each tool explicitly defines what it can access. Never give agents broad credentials, always create narrow interfaces that log every action and fail closed when something unexpected happens.",
+      "MCP servers are the gateway between AI agents and your systems. It's critical to use MCP implementations with capability-based security, where each tool explicitly defines what it can access. The principle: never give agents broad credentials—always create narrow interfaces that log every action and fail closed when something unexpected happens.",
   },
   {
     title: "API Authentication for Agents",
@@ -101,7 +101,7 @@ export const promptProjects: PromptProject[] = [
     category: "Integration Architecture",
     technologies: ["OAuth", "JWT", "Service Accounts", "mTLS"],
     preview:
-      "AI agents making API calls need identity management that's more restrictive than human users. By implementing service account architectures where each agent gets scoped tokens with minimal permissions and short expiration times can save your company from a major incident. Every API call is authenticated, rate-limited, and tied to a specific agent instance so we can revoke access if something goes wrong.",
+      "AI agents making API calls need identity management that's more restrictive than human users. The approach: service account architectures where each agent gets scoped tokens with minimal permissions and short expiration times. For high-security scenarios, single-use ephemeral tokens that expire after one action minimize blast radius if compromised. Every API call should be authenticated, rate-limited, and tied to a specific agent instance so access can be revoked if something goes wrong.",
   },
   {
     title: "Audit Trail Architecture",
@@ -110,6 +110,6 @@ export const promptProjects: PromptProject[] = [
     category: "Integration Architecture",
     technologies: ["Logging", "Monitoring", "Trace Analysis"],
     preview:
-      "You can't secure what you can't see. Audit trails are a critical to capture every integration point—what the agent read, what tools it called, what data it accessed. These logs are structured for analysis, not just storage, so you can detect anomalies, debug failures, and prove compliance.",
+      "You can't secure what you can't see. Audit trails are critical to capture every integration point—what the agent read, what tools it called, what data it accessed. These logs should be structured for analysis, not just storage, enabling anomaly detection, failure debugging, and compliance verification.",
   },
 ];

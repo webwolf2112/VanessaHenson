@@ -11,13 +11,13 @@ const AISecurity: React.FC<AISecurityProps> = ({ onNavigate }) => {
   const categories = ["All", "Integration Architecture", "Defensive Engineering", "Prompt Architecture"];
 
   const categoryIntros: Record<string, string> = {
-    All: "I build AI systems with security at the core, not as an afterthought. From designing safe integrations to engineering defensive systems and production-ready prompts, my focus is on creating AI that's both powerful and protected against emerging threats.",
+    All: "I approach AI systems with security at the core, not as an afterthought. From designing safe integrations to engineering defensive systems and architecting production-ready prompts, my focus is on creating AI that's both powerful and protected against emerging threats.",
 
-    "Integration Architecture": "I design secure connections between AI systems and your infrastructure. Whether it's MCP servers controlling tool access or RAG pipelines grounding responses in verified data, I build integrations that balance capability with safety. Every connection includes access controls and audit trails that default to secure.",
+    "Integration Architecture": "I understand how to design secure connections between AI systems and infrastructure. Whether it's MCP servers controlling tool access or RAG pipelines grounding responses in verified data, my approach balances capability with safety through access controls and audit trails that default to secure.",
 
-    "Defensive Engineering": "I approach AI development with an adversarial mindset from the start. Every input, tool call, and memory reference is treated as potentially malicious. I build layered defenses against prompt injection, data exfiltration, and privilege escalation—security is part of the architecture, not added later.",
+    "Defensive Engineering": "I approach AI development with an adversarial mindset from the start. Every input, tool call, and memory reference should be treated as potentially malicious. My focus is on layered defenses against prompt injection, data exfiltration, and privilege escalation—security as part of the architecture, not added later.",
 
-    "Prompt Architecture": "I treat prompts as production infrastructure that needs the same rigor as any other code. My templates include clear boundaries, structured outputs, and fail-safe behaviors that maintain integrity under edge cases. Each prompt is tested against adversarial inputs and designed to fail gracefully when things go wrong.",
+    "Prompt Architecture": "I treat prompts as production infrastructure that needs the same rigor as any other code. Key aspects include clear boundaries, structured outputs, and fail-safe behaviors that maintain integrity under edge cases. Production prompts should be tested against adversarial inputs and designed to fail gracefully when things go wrong.",
   };
 
   const filteredProjects =
