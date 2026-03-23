@@ -6,9 +6,9 @@ interface AISecurityProps {
 }
 
 const AISecurity: React.FC<AISecurityProps> = ({ onNavigate }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Defensive Engineering");
 
-  const categories = ["All", "Integration Architecture", "Defensive Engineering", "Prompt Architecture"];
+  const categories = ["Defensive Engineering", "Integration Architecture", "Prompt Architecture", "All"];
 
   const categoryIntros: Record<string, string> = {
     All: "I approach AI systems with security at the core, not as an afterthought. From designing safe integrations to engineering defensive systems and architecting production-ready prompts, my focus is on creating AI that's both powerful and protected against emerging threats.",

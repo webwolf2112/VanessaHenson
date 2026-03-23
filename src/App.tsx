@@ -51,13 +51,13 @@ function App() {
           </a>
           <ul className="nav-menu">
             <li>
-              <a href="#design-projects" className="nav-link">
-                Full Stack Development
+              <a href="#prompt-engineering" className="nav-link">
+                AI Security
               </a>
             </li>
             <li>
-              <a href="#prompt-engineering" className="nav-link">
-                AI Security
+              <a href="#design-projects" className="nav-link">
+                Full Stack Development
               </a>
             </li>
             <li>
@@ -102,21 +102,6 @@ function App() {
 
       <div className="portfolio-grid">
         <div
-          className="portfolio-card portfolio-card-green"
-          onClick={() => scrollToSection("design-projects")}
-        >
-          <div className="card-icon">🎨</div>
-          <div>
-            <h3 className="card-title">Full Stack Development</h3>
-            <p className="card-description">
-              I focus on event-driven architectures, reliable CI/CD pipelines,
-              and ensuring security-first development meets user-friendly
-              experiences. interfaces.
-            </p>
-          </div>
-        </div>
-
-        <div
           className="portfolio-card portfolio-card-yellow"
           onClick={() => scrollToSection("prompt-engineering")}
         >
@@ -128,6 +113,21 @@ function App() {
               teams adopt agent technologies responsibly, ensuring that new
               systems stay resilient against emerging risks and the complexities
               of modern AI security.
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="portfolio-card portfolio-card-green"
+          onClick={() => scrollToSection("design-projects")}
+        >
+          <div className="card-icon">🎨</div>
+          <div>
+            <h3 className="card-title">Full Stack Development</h3>
+            <p className="card-description">
+              I focus on event-driven architectures, reliable CI/CD pipelines,
+              and ensuring security-first development meets user-friendly
+              experiences. interfaces.
             </p>
           </div>
         </div>
@@ -164,11 +164,11 @@ function App() {
       </div>
 
       <main>
-        <div id="design-projects">
-          <DevelopmentProjects onNavigate={setCurrentPage} />
-        </div>
         <div id="prompt-engineering">
           <AISecurity onNavigate={setCurrentPage} />
+        </div>
+        <div id="design-projects">
+          <DevelopmentProjects onNavigate={setCurrentPage} />
         </div>
         <div id="technical-writing">
           <DocumentationAndTraining onNavigate={setCurrentPage} />
