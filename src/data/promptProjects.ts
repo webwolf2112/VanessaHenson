@@ -46,6 +46,34 @@ export const promptProjects: PromptProject[] = [
       "Agents with high-level credentials require robust guardrails. By using techniques such as credential management, access controls and human in the loop you can ensure autonomous systems act only within their intended scope.",
   },
   {
+    title: "Developer Guardrails",
+    description: "Focus: Permission-Based Security - Protecting Critical Assets",
+    category: "Defensive Engineering",
+    technologies: ["File Access Control", "Command Filtering", "Permission Management"],
+    preview:
+      "Setting explicit deny/allow rules is the foundation of secure AI agent deployment. By blocking access to sensitive directories (.ssh, .aws, .env files) and dangerous commands (rm -rf, sudo, curl), while requiring confirmation for critical operations (git push, npm publish), you create defense-in-depth that prevents both accidental and malicious actions.",
+    examplePrompt: `{
+  "permissions": {
+    "deny": [
+      "Read(~/.ssh/*)",
+      "Read(~/.aws/*)",
+      "Read(~/.gnupg/*)",
+      "Read(~/.bash_history)",
+      "Read(./**/.env*)",
+      "Read(./**/*.pem)",
+      "Bash(rm -rf /)",
+      "Bash(sudo *)",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(npm publish)"
+    ]
+  }
+}`,
+  },
+  {
     title: "Novel Vector Defense",
     description: "Focus: Resilience and Awareness - Protecting Against the New",
     category: "Defensive Engineering",
